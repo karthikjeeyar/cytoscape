@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <meta charset=utf-8 />
+  <title>Cytoscape style</title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.5.2/cytoscape.min.js"></script>
+  <script src="cola.js"></script>
+  <style>
+  body { 
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  background-color: #efefef;
+  }
+
+  .container {
+    /* display: grid; */
+    background-color: #fefefe;
+  }
+  #cy {
+      border:1px solid grey;
+      height: 80vh;
+      width:80vw;
+      margin:auto;
+      background-color: white;
+  }
+  </style>
+</head>
+  
+<body>
+  <div id="container">
+    <div id="controls">CONTROLS
+      <ul style="list-style-type: none;">
+        <li id="1">
+          <button id="toggleZoom">Toggle Zoom</button>
+          <!-- <button id="selectAndZoom">Select and Zoom</button> -->
+        </li>
+      </ul>    
+    </div>
+    <div id="cy"></div>
+  </div>
+  <!-- Load application code at the end to ensure DOM is loaded -->
+  <script src="code.js"></script>
+</body>
+</html>

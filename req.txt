@@ -1,0 +1,12 @@
+node
+
+1. build type
+2. label
+3. pods
+4. relationship
+5. id
+6. che link
+7. additional info
+
+
+egdes
